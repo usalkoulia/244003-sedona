@@ -2,21 +2,30 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Welkome to Sedona</title>
+    <title>Добро пожаловать в Седону!</title>
   </head>
   <body>
     <header class="main-header">
-      <a href="index.html"><img src="logo.png" alt="logo"></a>
+      <a href="#"><img src="http://via.placeholder.com/75x50" alt="Логотип Седоны" width="75" height="50"></a>
       <nav>
         <ul class="main-menu">
-          <li><a href="info.html">Информация</a></li>
-          <li><a href="gallery.html">Фото и видео</a></li>
-          <li><a href="map.html">Карта штата</a></li>
-          <li><a href="hotels.html">Гостинницы</a></li>
+          <li>
+            <a href="#">Информация</a>
+          </li>
+          <li>
+            <a href="#">Фото и видео</a>
+          </li>
+          <li>
+            <a href="#">Карта штата</a>
+          </li>
+          <li>
+            <a href="#">Гостинницы</a>
+          </li>
         </ul>
       </nav>
     </header>
-    <main class="main-page">
+
+    <main>
       <h1 class="visually-hidden">Добро пожаловать в Седону!</h1> <!--Будет скрыт с помощью css-->
       <div class="background-block"> <!--Этот класс задает в css размеры фона и цвет на случай, если изображения не загрузятся-->
         <div class="background-pictures">
@@ -28,13 +37,13 @@
         <h2 class="visually-hidden"> Причины, по которым нужно выбрать Седону</h2> <!--Будет скрыт с помощью css-->
         <h3>Седона - небольшой городок в Аризоне,<br> заслуживающий большего!</h3>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
-        <article class="big-features">
+        <article class="big-feature">
           <div class="content-block">
             <h3>Настоящий городок</h3>
             <span class="numbers">№1</span>
             <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
           </div>
-          <img src="pic1.jpg" alt="Sedona photo" class="content-image">
+          <img src="http://via.placeholder.com/500x150" alt="Sedona photo" class="content-image" width="500" height="150">
         </article>
 
         <ul class="features-list">
@@ -56,7 +65,7 @@
         </ul>
 
         <article class="big-features">
-          <img src="pic2.jpg" alt="Bridge.photo" class="content-image">
+          <img src="http://via.placeholder.com/500x150" alt="Bridge photo" class="content-image" width="500" height="150">
           <div class="content-block">
             <h3>Там есть мост дьявола</h3>
             <span class="numbers">№2</span>
@@ -82,6 +91,7 @@
           </li>
         </ul>
       </section>
+
       <section class="search">
         <div class="search-form-head">
           <h2>Заинтересовались?</h2>
@@ -89,8 +99,8 @@
           <button type="button">Поиск гостиницы в Седоне</button>
         </div>
         <div class="search-form">
-          <img src="map.jpg" alt="Карта">
-          <form action="index.html" method="post">
+          <img src="http://via.placeholder.com/700x500" alt="Карта" width="700" height="500">
+          <form action="#" method="post">
             <div class="form-input">
               <label for="calendar-in">Дата заезда:</label>
               <input type="text" name="date-in" value="24 апреля 2016" id="calendar-in">
@@ -118,14 +128,21 @@
         </div>
       </section>
     </main>
-    <footer>
+
+    <footer class="main-footer">
       <p class="text-footer">#VISITSEDONA</p>
       <ul class="social-footer">
-        <li><a href="twitter.com"><img src="twitter.jpg" alt="twitter"></a></li>
-        <li><a href="facebook.com"><img src="facebook.jpg" alt="facebook"></a></li>
-        <li><a href="youtube.com"><img src="youtube.jpg" alt="youtube"></a></li>
+        <li>
+          <a href="twitter.com"><img src="http://via.placeholder.com/20x20" alt="twitter" width="20" height="20"></a>
+        </li>
+        <li>
+          <a href="facebook.com"><img src="http://via.placeholder.com/20x20" alt="facebook" width="20" height="20"></a>
+        </li>
+        <li>
+          <a href="youtube.com"><img src="http://via.placeholder.com/20x20" alt="youtube" width="20" height="20"></a>
+        </li>
       </ul>
-      <a href="htmlacademy.com"><img src="htmlacademy.jpg" alt="htmlacademy"></a>
+      <a href="htmlacademy.com"><img src="http://via.placeholder.com/100x30" alt="htmlacademy" width="100" height="30"></a>
     </footer>
   </body>
 </html>
