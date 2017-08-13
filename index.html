@@ -2,11 +2,130 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Welkome to Sedona</title>
   </head>
   <body>
+    <header class="main-header">
+      <a href="index.html"><img src="logo.png" alt="logo"></a>
+      <nav>
+        <ul class="main-menu">
+          <li><a href="info.html">Информация</a></li>
+          <li><a href="gallery.html">Фото и видео</a></li>
+          <li><a href="map.html">Карта штата</a></li>
+          <li><a href="hotels.html">Гостинницы</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-page">
+      <h1 class="visually-hidden">Добро пожаловать в Седону!</h1> <!--Будет скрыт с помощью css-->
+      <div class="background-block"> <!--Этот класс задает в css размеры фона и цвет на случай, если изображения не загрузятся-->
+        <div class="background-pictures">
+          <!--Здесь три изображения, которые будут в css как background-image: фон, белая маска и текст. Изображения накладываются друг на друга-->
+        </div>
+      </div>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+      <section>
+        <h2 class="visually-hidden"> Причины, по которым нужно выбрать Седону</h2> <!--Будет скрыт с помощью css-->
+        <h3>Седона - небольшой городок в Аризоне,<br> заслуживающий большего!</h3>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
+        <article class="big-features">
+          <div class="content-block">
+            <h3>Настоящий городок</h3>
+            <span class="numbers">№1</span>
+            <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+          </div>
+          <img src="pic1.jpg" alt="Sedona photo" class="content-image">
+        </article>
 
+        <ul class="features-list">
+          <li>
+            <div class="decor-pic"></div>
+            <h3>Жилье</h3>
+            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </li>
+          <li>
+            <div class="decor-pic"></div>
+            <h3>Еда</h3>
+            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+          <li>
+            <div class="decor-pic"></div>
+            <h3>Сувениры</h3>
+            <p>Не только китайского, но и местного производства!</p>
+          </li>
+        </ul>
+
+        <article class="big-features">
+          <img src="pic2.jpg" alt="Bridge.photo" class="content-image">
+          <div class="content-block">
+            <h3>Там есть мост дьявола</h3>
+            <span class="numbers">№2</span>
+            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </div>
+        </article>
+
+        <ul class="features-list features-list-grey">
+          <li>
+            <h3>небольшая площадь</h3>
+            <span class="numbers">№3</span>
+            <p>Все достопримечательности находятся очень близко</p>
+          </li>
+          <li>
+            <h3>Красивая дорога</h3>
+            <span class="numbers">№4</span>
+            <p>Ехать в Седону зи Лас-вегаса совсем не скучно!</p>
+          </li>
+          <li>
+            <h3>Мало туристов</h3>
+            <span class="numbers">№5</span>
+            <p>Большинство едет в Гранд-каньон и толпится там</p>
+          </li>
+        </ul>
+      </section>
+      <section class="search">
+        <div class="search-form-head">
+          <h2>Заинтересовались?</h2>
+          <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <button type="button">Поиск гостиницы в Седоне</button>
+        </div>
+        <div class="search-form">
+          <img src="map.jpg" alt="Карта">
+          <form action="index.html" method="post">
+            <div class="form-input">
+              <label for="calendar-in">Дата заезда:</label>
+              <input type="text" name="date-in" value="24 апреля 2016" id="calendar-in">
+              <input type="image" name="calendar" src="http://via.placeholder.com/20x20" alt="Calendar">
+            </div>
+            <div class="form-input">
+              <label for="calendar-out">Дата выезда:</label>
+              <input type="text" name="date-out" value="24 апреля 2016" id="calendar-out">
+              <input type="image" name="calendar" src="http://via.placeholder.com/20x20" alt="Calendar">
+            </div>
+            <div class="form-input">
+              <label for="adult">Взрослые:</label>
+              <input type="button" name="form-adult-minus" value="-">
+              <input type="text" name="form-adult" value="2" id="adult">
+              <input type="button" name="form-adult-plus" value="+">
+              <label for="child">Дети:</label>
+              <input type="button" name="form-child-minus" value="-">
+              <input type="text" name="form-child" value="0" id="child">
+              <input type="button" name="form-child-plus" value="+">
+            </div>
+            <div class="form-button">
+              <a href="#">Найти</a>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p class="text-footer">#VISITSEDONA</p>
+      <ul class="social-footer">
+        <li><a href="twitter.com"><img src="twitter.jpg" alt="twitter"></a></li>
+        <li><a href="facebook.com"><img src="facebook.jpg" alt="facebook"></a></li>
+        <li><a href="youtube.com"><img src="youtube.jpg" alt="youtube"></a></li>
+      </ul>
+      <a href="htmlacademy.com"><img src="htmlacademy.jpg" alt="htmlacademy"></a>
+    </footer>
   </body>
 </html>
