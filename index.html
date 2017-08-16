@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Добро пожаловать в Седону!</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <a href="#">
-        <img src="http://via.placeholder.com/75x50" alt="Логотип Седоны" width="75" height="50">
+        <img src="img/logo.png" alt="Логотип Седоны" width="138" height="70">
       </a>
       <nav>
         <ul class="main-menu">
@@ -21,7 +22,7 @@
             <a href="#">Карта штата</a>
           </li>
           <li>
-            <a href="#">Гостинницы</a>
+            <a href="#">Гостиницы</a>
           </li>
         </ul>
       </nav>
@@ -32,7 +33,7 @@
       <div class="background-block"> <!--Этот класс задает в css размеры фона и цвет на случай, если изображения не загрузятся-->
         <div class="background-pictures">
           <!--Здесь три изображения, которые будут в css как background-image: фон, белая маска и текст. Изображения накладываются друг на друга-->
-          <h3>Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
+          <h3 class="background-block-heading">Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
         </div>
       </div>
@@ -41,32 +42,32 @@
         <h2 class="visually-hidden"> Причины, по которым нужно выбрать Седону</h2> <!--Будет скрыт с помощью css-->
         <div class="feature">
           <div class="content-block">
-            <h3>Настоящий городок</h3>
+            <h3 class="main-features-heading">Настоящий городок</h3>
             <span class="numbers">- №1 -</span>
             <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
           </div>
-          <img src="http://via.placeholder.com/500x150" alt="Sedona photo" class="content-image" width="500" height="150">
+          <img src="img/content-image-1.jpg" alt="Sedona photo" class="content-image" width="800" height="256">
         </div>
 
         <ul class="services-list">
           <li>
-            <h3>Жилье</h3>
+            <h3 class="main-features-heading">Жилье</h3>
             <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
           <li>
-            <h3>Еда</h3>
+            <h3 class="main-features-heading">Еда</h3>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li>
-            <h3>Сувениры</h3>
+            <h3 class="main-features-heading">Сувениры</h3>
             <p>Не только китайского, но и местного производства!</p>
           </li>
         </ul>
 
         <div class="feature">
-          <img src="http://via.placeholder.com/500x150" alt="Bridge photo" class="content-image" width="500" height="150">
+          <img src="img/content-image-2.jpg" alt="Bridge photo" class="content-image" width="800" height="256">
           <div class="content-block">
-            <h3>Там есть мост дьявола</h3>
+            <h3 class="main-features-heading">Там есть мост дьявола</h3>
             <span class="numbers">- №2 -</span>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
@@ -74,17 +75,17 @@
 
         <ul class="advantages-list">
           <li>
-            <h3>небольшая площадь</h3>
+            <h3 class="main-features-heading">небольшая площадь</h3>
             <span class="numbers">- №3 -</span>
             <p>Все достопримечательности находятся очень близко</p>
           </li>
           <li>
-            <h3>Красивая дорога</h3>
+            <h3 class="main-features-heading">Красивая дорога</h3>
             <span class="numbers">- №4 -</span>
             <p>Ехать в Седону зи Лас-вегаса совсем не скучно!</p>
           </li>
           <li>
-            <h3>Мало туристов</h3>
+            <h3 class="main-features-heading">Мало туристов</h3>
             <span class="numbers">- №5 -</span>
             <p>Большинство едет в Гранд-каньон и толпится там</p>
           </li>
@@ -98,7 +99,7 @@
           <button type="button">Поиск гостиницы в Седоне</button>
         </div>
         <div class="search-form">
-          <img src="http://via.placeholder.com/700x500" alt="Карта" width="700" height="500">
+          <img src="img/map.jpg" alt="Карта" width="1200" height="593">
           <form action="#" method="post">
             <div class="form-input">
               <label for="calendar-in">Дата заезда:</label>
@@ -148,7 +149,7 @@
         </li>
       </ul>
       <a href="htmlacademy.com">
-        <img src="http://via.placeholder.com/100x30" alt="htmlacademy" width="100" height="30">
+        <img src="img/logo-htmlacademy.svg" alt="htmlacademy" width="115" height="41">
       </a>
     </footer>
   </body>
