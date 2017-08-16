@@ -3,7 +3,7 @@ body {
   line-height: 26px;
   font-weight: normal;
   color: #000000;
-  font-family: PT Sans;
+  font-family: "PT Sans";
 }
 
 .background-block-heading {
@@ -11,7 +11,7 @@ body {
   line-height: 26px;
   font-weight: bold;
   color: #000000;
-  font-family: PT Sans;
+  font-family: "PT Sans";
 }
 
 .main-features-heading {
@@ -19,5 +19,5 @@ body {
   line-height: 21px;
   font-weight: bold;
   color: #000000;
-  font-family: PT Sans;
+  font-family: "PT Sans";
 }
