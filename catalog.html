@@ -51,10 +51,13 @@
         </fieldset>
         <fieldset>
           <legend>Стоимость в сутки (Р):</legend>
-          <input type="text" name="price-from" value="От 0">
-          <input type="text" name="price-to" value="До 3000">
+          <input type="text" name="price-from" value="От 0" id="price-from">
+          <label for="price-from" class="visually-hidden">Стоимость в сутки от</label>
+          <input type="text" name="price-to" value="До 3000" id="price-to">
+          <label for="price-to" class="visually-hidden">Стоимость в сутки до</label>
           <div class="form-range">
-            <input type="range" name="price-range" min="0" max="3000" value="2600" step="100">
+            <input type="range" name="price-range" min="0" max="3000" value="2600" step="100" id="price-range">
+            <label for="price-range" class="visually-hidden">Стоимость в сутки от 0 и до 3000 в рублях</label>
           </div>
           <input type="submit" name="show" value="Показать">
         </fieldset>
@@ -65,13 +68,13 @@
           <span class="count">Найдено: 3</span>
           <span class="sorting">Сортировка:</span>
           <div class="sorting-type">
-            <a href="#" class="active">По цене</a>
-            <a href="#">По типу</a>
-            <a href="#">По рейтингу</a>
+            <button type="button" id="sorting-price" class="active">По цене</button>
+            <button type="button" id="sorting-type">По типу</button>
+            <button type="button" id="sorting-rating">По рейтингу</button>
           </div>
           <div class="sorting-priority">
-            <button type="button">▲</button>
-            <button type="button">▼</button>
+            <button type="button" id="sorting-asc"><span class="visually-hidden">Сортировка по возрастанию</span>▲</button>
+            <button type="button" id="sorting-desc"><span class="visually-hidden">Сортировка по убыванию</span>▼</button>
           </div>
         </div>
         <ul class="hotels-list">
@@ -132,17 +135,17 @@
       <ul class="social-footer">
         <li>
           <a href="twitter.com">
-            <img src="http://via.placeholder.com/20x20" alt="twitter" width="20" height="20">
+            <img src="img/icon-twitter.svg" alt="twitter" width="20" height="20">
           </a>
         </li>
         <li>
           <a href="facebook.com">
-            <img src="http://via.placeholder.com/20x20" alt="facebook" width="20" height="20">
+            <img src="img/icon-fb.svg" alt="facebook" width="20" height="20">
           </a>
         </li>
         <li>
           <a href="youtube.com">
-            <img src="http://via.placeholder.com/20x20" alt="youtube" width="20" height="20">
+            <img src="img/icon-youtube.svg" alt="youtube" width="20" height="20">
           </a>
         </li>
       </ul>

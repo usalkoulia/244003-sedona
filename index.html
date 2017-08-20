@@ -99,7 +99,7 @@
           <button type="button">Поиск гостиницы в Седоне</button>
         </div>
         <div class="search-form">
-          <img src="img/map.jpg" alt="Карта" width="1200" height="593">
+          <img src="img/map.jpg" alt="Седона, северная область долины Верде, штат Аризона" width="1200" height="593">
           <form action="#" method="post">
             <div class="form-input">
               <label for="calendar-in">Дата заезда:</label>
@@ -113,16 +113,16 @@
             </div>
             <div class="form-input">
               <label for="adult">Взрослые:</label>
-              <input type="button" name="form-adult-minus" value="-">
+              <button type="button" name="form-adult-minus"><span class="visually-hidden">Меньше на одного</span>-</button>
               <input type="text" name="form-adult" value="2" id="adult">
-              <input type="button" name="form-adult-plus" value="+">
+              <button type="button" name="form-adult-plus"><span class="visually-hidden">Больше на одного</span>+</button>
               <label for="child">Дети:</label>
-              <input type="button" name="form-child-minus" value="-">
+              <button type="button" name="form-child-minus"><span class="visually-hidden">Меньше на одного</span>-</button>
               <input type="text" name="form-child" value="0" id="child">
-              <input type="button" name="form-child-plus" value="+">
+              <button type="button" name="form-child-plus"><span class="visually-hidden">Больше на одного</span>+</button>
             </div>
             <div class="form-button">
-              <a href="#">Найти</a>
+              <button type="submit" class="form-search">Найти</button>
             </div>
           </form>
         </div>
