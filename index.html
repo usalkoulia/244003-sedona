@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Добро пожаловать в Седону!</title>
     <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -26,7 +27,7 @@
       </nav>
     </header>
 
-    <main>
+    <main class="site-index">
       <h1 class="visually-hidden">Добро пожаловать в Седону!</h1> <!--Будет скрыт с помощью css-->
       <div class="background-block"> <!--Этот класс задает в css размеры фона и цвет на случай, если изображения не загрузятся-->
         <div class="background-pictures">
@@ -49,14 +50,17 @@
 
         <ul class="services-list">
           <li>
+            <img src="img/icon-home.svg" alt="home">
             <h3 class="main-features-heading">Жилье</h3>
             <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
           <li>
+            <img src="img/icon-burger.svg" alt="burger">
             <h3 class="main-features-heading">Еда</h3>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li>
+            <img src="img/icon-present.svg" alt="present">
             <h3 class="main-features-heading">Сувениры</h3>
             <p>Не только китайского, но и местного производства!</p>
           </li>
@@ -94,7 +98,7 @@
         <div class="search-form-head">
           <b>Заинтересовались?</b>
           <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <button type="button">Поиск гостиницы в Седоне</button>
+          <button type="button" class="form-search">Поиск гостиницы в Седоне</button>
         </div>
         <div class="search-form">
           <img src="img/map.jpg" alt="Седона, северная область долины Верде, штат Аризона" width="1200" height="593">

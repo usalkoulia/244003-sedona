@@ -1,23 +1,78 @@
 body {
+  margin: 0;
+  padding: 0;
+
   font-size: 14px;
   line-height: 26px;
   font-weight: normal;
   color: #000000;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+
+  background-color: #fefefe;
 }
 
-.background-block-heading {
+.background-block-heading,
+.form-search {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
-  color: #000000;
-  font-family: "PT Sans";
 }
 
 .main-features-heading {
   font-size: 21px;
   line-height: 21px;
   font-weight: bold;
-  color: #000000;
-  font-family: "PT Sans";
+}
+
+.main-header {
+  background-color: #ffffff;
+}
+
+.site-index {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #81b3d2;
+}
+
+a:active {
+}
+
+
+.background-pictures {
+  height: 724px;
+  width: 1200px;
+  background-image: url("img/background.jpg"), url("img/background-mask.png"), url("img/background-text.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.content-block {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.advantages-list {
+  background-color: #eeeeee;
+}
+
+.form-search {
+  color: #ffffff;
+  width: 568px;
+  height: 86px;
+}
+
+.search-form-head .form-search {
+  background-color: #766357;
+}
+
+.form-button .form-search {
+background-color: #81b3d2;
 }
