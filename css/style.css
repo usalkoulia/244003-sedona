@@ -33,8 +33,11 @@ a:active {
   position: absolute;
   overflow: hidden;
   clip: rect(0 0 0 0);
-  height: 1px; width: 1px;
-  margin: -1px; padding: 0; border: 0;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
 }
 
 /*Стили для хедера*/
@@ -73,9 +76,31 @@ a:active {
 .background-pictures {
   height: 724px;
   width: 1200px;
-  background-image: url("../img/background-text.png"), url("../img/background-mask.png"), url("../img/background.jpg");
+  background-image: url("../img/background-text.png"),
+                    url("../img/background-mask.png"),
+                    url("../img/background.jpg");
   background-repeat: no-repeat;
   background-position: top center;
+}
+
+.services-list li{
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.services-home {
+  background-image: url("../img/icon-home.svg");
+  padding-top: 85px;
+}
+
+.services-burger {
+  background-image: url("../img/icon-burger.svg");
+  padding-top: 80px;
+}
+
+.services-present {
+  background-image: url("../img/icon-present.svg");
+  padding-top: 80px;
 }
 
 .content-block {
@@ -285,6 +310,29 @@ a:active {
 
 .btn-sorting-priority button:active {
   color: #81b3d2;
+}
+
+.rating-label {
+  color: #666666;
+  background-color: #f2f2f2;
+}
+
+.hotels-rating-stars {
+  background-image: url("../img/star.svg");
+  background-repeat: space;
+  height: 17px;
+}
+
+.four-stars {
+  width: 87px;
+}
+
+.three-stars {
+  width: 64px;
+}
+
+.two-stars {
+  width: 41px;
 }
 
 /*Стили для футера*/
