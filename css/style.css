@@ -106,29 +106,30 @@ a:active {
   HERO
 \*====================================================================================================================*/
 
-.background-pictures {
-  height: 509px;
+/*.hero-pictures {*/
+
+.hero-bottom-text {
+  /*height: 509px;*/
+  padding-top: 509px;
   width: 1200px;
   background: url("../img/background-text.png") center no-repeat,
               url("../img/background-mask.png") bottom center no-repeat,
               url("../img/background.jpg") center -55px no-repeat;
 }
 
-.background-block-heading,
-.form-search,
-.count {
+.hero-block-heading {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
 }
 
-.bacrkground-bottom-text {
+.hero-bottom-text {
   background-color: #ffffff;
-  padding-top: 60px;
+  /*padding-top: 60px;*/
   padding-bottom: 40px;
 }
 
-.background-block-heading {
+.hero-block-heading {
   width: 450px;
   margin:0 auto;
   margin-bottom: 25px;
@@ -152,6 +153,7 @@ a:active {
 .feature {
   display: flex;
   line-height: 21px;
+  background-color: #81b3d2;
 }
 
 .content-block {
@@ -519,6 +521,9 @@ a:active {
 
 .sorting-container .count {
   margin-right: 47px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
 }
 
 .sorting-container .sorting {
@@ -629,12 +634,8 @@ a:active {
   height: 46px;
 }
 
-.social-footer li:first-child {
-  margin-right: 5px;
-}
-
-.social-footer li:last-child {
-  margin-left: 5px;
+.social-footer li {
+  margin: 3px;
 }
 
 .social-footer a {
