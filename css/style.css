@@ -1,3 +1,7 @@
+/*====================================================================================================================*\
+  БАЗОВЫЕ СТИЛИ
+\*====================================================================================================================*/
+
 body {
   margin: 0;
   padding: 0;
@@ -9,7 +13,7 @@ body {
   font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
 
-  background-color: #ffffff;
+  background-color: #f2f2f2;
 }
 
 .catalog-page {
@@ -29,6 +33,12 @@ a:active {
   color: #4c4c4c;
 }
 
+.centering {
+  width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
+}
+
 .visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -40,14 +50,69 @@ a:active {
   border: 0;
 }
 
-/*Стили для хедера*/
+.site-index {
+  text-align: center;
+}
+
+/*====================================================================================================================*\
+  HEADER
+\*====================================================================================================================*/
 
 .main-menu {
   font-weight: bold;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-menu li {
+  width: 20%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.main-menu li:nth-child(1) {
+  margin-left: 6%;
+}
+
+.main-menu li:nth-child(4) {
+  margin-right: 6%;
+}
+
+.main-menu li:nth-child(3) {
+  margin-left: auto;
+}
+
+.main-menu li:nth-child(1),
+.main-menu li:nth-child(2) {
+  text-align: left;
+}
+
+.main-menu li:nth-child(3),
+.main-menu li:nth-child(4) {
+  text-align: right;
 }
 
 .main-menu .active {
   color: #766357;
+}
+
+.main-header {
+  background-color: #ffffff;
+}
+
+/*====================================================================================================================*\
+  HERO
+\*====================================================================================================================*/
+
+.background-pictures {
+  height: 509px;
+  width: 1200px;
+  background: url("../img/background-text.png") center no-repeat,
+              url("../img/background-mask.png") bottom center no-repeat,
+              url("../img/background.jpg") center -55px no-repeat;
+
 }
 
 .background-block-heading,
@@ -58,34 +123,79 @@ a:active {
   font-weight: bold;
 }
 
+.bacrkground-bottom-text {
+  background-color: #ffffff;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.background-block-heading {
+  width: 450px;
+  margin:0 auto;
+  margin-bottom: 25px;
+}
+
+/*====================================================================================================================*\
+  FEATURE
+\*====================================================================================================================*/
+
+.numbers {
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
 .main-features-heading {
   font-size: 21px;
   line-height: 21px;
   font-weight: bold;
 }
 
-/*Стили для основного содержания страницы*/
-.main-header {
+.feature {
+  display: flex;
+  line-height: 21px;
+}
+
+.content-block {
+  width: 33.3%;
+  padding-top: 45px;
+  padding-bottom: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  box-sizing: border-box;
+}
+
+.main-features-heading {
+  width: 160px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.content-block {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+/*====================================================================================================================*\
+  SERVICES
+\*====================================================================================================================*/
+
+.services-list {
+  line-height: 21px;
+  display: flex;
   background-color: #ffffff;
-}
-
-.site-index {
-  text-align: center;
-}
-
-.background-pictures {
-  height: 724px;
-  width: 1200px;
-  background-image: url("../img/background-text.png"),
-                    url("../img/background-mask.png"),
-                    url("../img/background.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .services-list li{
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center 60px;
+  width: 33.3%;
+  padding-top: 159px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 68px;
 }
 
 .services-home {
@@ -103,16 +213,119 @@ a:active {
   padding-top: 80px;
 }
 
-.content-block {
-  color: #ffffff;
-  background-color: #81b3d2;
-}
+/*====================================================================================================================*\
+  ADVANTAGES
+\*====================================================================================================================*/
 
 .advantages-list {
+  line-height: 21px;
+  display: flex;
   background-color: #eeeeee;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-/*Кнопки*/
+.advantages-list li {
+  width: 33.3%;
+  padding-top: 45px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 50px;
+}
+
+/*====================================================================================================================*\
+  HOTELS
+\*====================================================================================================================*/
+
+.hotels-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.hotels-item {
+  min-height: 110px;
+  display: flex;
+  border-top: 1px solid #e5e5e5;
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.hotels-item:last-child {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.hotels-rating {
+  margin-left: auto;
+}
+
+.hotels-info h3 {
+  font-size: 21px;
+  margin: 0;
+}
+
+.hotels-info p {
+  margin: 0;
+}
+
+.hotels-pic {
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.hotels-rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.hotels-type {
+  display: inline-block;
+  width: 110px;
+}
+
+.rating-label {
+  color: #666666;
+  background-color: #f2f2f2;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.hotels-rating-stars {
+  background-image: url("../img/star.svg");
+  background-repeat: space;
+  height: 17px;
+}
+
+.hotels-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.four-stars {
+  width: 87px;
+}
+
+.three-stars {
+  width: 64px;
+}
+
+.two-stars {
+  width: 41px;
+}
+
+/*====================================================================================================================*\
+  BUTTONS
+\*====================================================================================================================*/
+
 .btn {
   font: inherit;
   font-weight: bold;
@@ -125,7 +338,7 @@ a:active {
 
 .btn-big {
   font-size: 24px;
-  padding: 31px 140px;
+  padding: 31px 120px;
 }
 
 .btn-small {
@@ -164,6 +377,10 @@ a:active {
   background-color: #5496bd;
 }
 
+/*====================================================================================================================*\
+  SEARCH
+\*====================================================================================================================*/
+
 .btn-change-amount {
   background-color: #f2f2f2;
   font: inherit;
@@ -181,8 +398,32 @@ a:active {
   color: #81b3d2;
 }
 
-/*Формы*/
-.search-form input[type="text"] {
+.search-form-head {
+  background-color: #ffffff;
+  padding-top: 50px;
+}
+
+.search-form-head b {
+  font-size: 30px;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.search-form-head button {
+  margin-top: 30px;
+}
+
+.search-form {
+  background-color: #ffffff;
+  width: 575px;
+  height: 400px;
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.search-form-container input[type="text"] {
   background-color: #f2f2f2;
   font: inherit;
   font-weight: bold;
@@ -191,12 +432,12 @@ a:active {
   outline: none;
 }
 
-.search-form input[type="text"]:hover {
+.search-form-container input[type="text"]:hover {
   background-color: #ebebeb;
   border-color: #ebebeb;
 }
 
-.search-form input[type="text"]:focus {
+.search-form-container input[type="text"]:focus {
   background-color: #ffffff;
   border-color: #e5e5e5;
 }
@@ -215,44 +456,86 @@ a:active {
   fill: #81b3d2;
 }
 
-.search-form {
+.search-form-container {
   color: #000000;
   font-weight: bold;
 }
 
-.sorting-form {
+/*====================================================================================================================*\
+  SORTING
+\*====================================================================================================================*/
+
+.sorting-form-wrapper {
+  min-height: 217px;
   width: 1200px;
   color: #ffffff;
   background-image: url("../img/background-blur.jpg");
   background-repeat: no-repeat;
 }
 
-.hotels-details,
-.hotels-book {
-  text-transform: uppercase;
-  color: #ffffff;
-  font-size: 14px;
-  line-height: 21px;
-  border-style: none;
-  font-weight: bold;
-}
-
-.sorting-form fieldset {
+.sorting-form-wrapper fieldset {
   border: none;
 }
 
-.sorting-form legend {
+.sorting-form-wrapper legend {
   font-size: 16px;
   font-weight: bold;
 }
 
-.sorting-form input[type="text"] {
+.sorting-form-wrapper input[type="text"] {
   color: inherit;
   font: inherit;
   font-weight: normal;
   border: 2px solid #ffffff;
   background-color: transparent;
   padding: 4px 8px;
+}
+
+.sorting-form {
+  display: flex;
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-top: 25px;
+  padding-bottom: 40px;
+}
+
+.sorting-form fieldset {
+  display: flex;
+  min-width: 235px;
+  padding: 0;
+}
+
+.sorting-form fieldset:last-child {
+  margin-left: auto;
+}
+
+.sorting-container {
+  display: flex;
+  height: 90px;
+  justify-content: space-between;
+  padding-left: 6%;
+  padding-right: 6%;
+  align-items: center;
+}
+
+.sorting-container .count {
+  margin-right: 47px;
+}
+
+.sorting-container .sorting {
+  font-size: 12px;
+  margin-right: 40px;
+}
+
+.btn-sorting-type button {
+  font: inherit;
+  line-height: 18px;
+  margin-right: 30px;
+  padding: 0;
+}
+
+.btn-sorting-priority {
+  margin-left: auto;
 }
 
 .btn-show {
@@ -312,32 +595,14 @@ a:active {
   color: #81b3d2;
 }
 
-.rating-label {
-  color: #666666;
-  background-color: #f2f2f2;
-}
+/*====================================================================================================================*\
+  FOOTER
+\*====================================================================================================================*/
 
-.hotels-rating-stars {
-  background-image: url("../img/star.svg");
-  background-repeat: space;
-  height: 17px;
-}
-
-.four-stars {
-  width: 87px;
-}
-
-.three-stars {
-  width: 64px;
-}
-
-.two-stars {
-  width: 41px;
-}
-
-/*Стили для футера*/
 .main-footer {
+  height: 120px;
   background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
 }
 
 .footer-hashtag {
@@ -345,10 +610,37 @@ a:active {
   font-weight: bold;
 }
 
+.footer-hashtag-wrapper,
+.social-footer,
+.htmlacademy-logo-wrapper {
+  width: 33.3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-footer {
+  padding: 0;
+  list-style: none;
+}
+
+.social-footer a {
+  display: flex;
+  width: 46px;
+  height: 46px;
+}
+
+.social-footer li:first-child {
+  margin-right: 5px;
+}
+
+.social-footer li:last-child {
+  margin-left: 5px;
+}
+
 .social-footer a {
   fill: #ffffff;
   background-color: #81b3d2;
-  padding: 15px;
 }
 
 .social-footer a:hover {
@@ -360,10 +652,23 @@ a:active {
   fill: #88b6d1;
 }
 
+.social-footer a svg {
+  margin: auto;
+}
+
+.htmlacademy-logo span {
+  vertical-align: middle;
+  padding-right: 5px;
+}
+
 .htmlacademy-logo,
 .htmlacademy-logo:hover span,
 .htmlacademy-logo:active span{
   color: #000000;
+}
+
+.htmlacademy-logo svg {
+  vertical-align: middle;
 }
 
 .htmlacademy-logo:hover svg {
@@ -372,13 +677,4 @@ a:active {
 
 .htmlacademy-logo:active svg {
   fill: #bdbbbc;
-}
-
-/* Убираем точки у списков */
-.main-menu,
-.services-list,
-.advantages-list,
-.hotels-list,
-.social-footer {
-  list-style: none;
 }
