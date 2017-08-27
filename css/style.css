@@ -6,11 +6,11 @@ body {
   margin: 0;
   padding: 0;
 
+  font-weight: normal;
   font-size: 14px;
   line-height: 26px;
-  font-weight: normal;
-  color: #000000;
   font-family: "PT Sans", sans-serif;
+  color: #000000;
   text-transform: uppercase;
 
   background-color: #f2f2f2;
@@ -21,8 +21,8 @@ body {
 }
 
 a {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
 }
 
 a:hover {
@@ -36,18 +36,22 @@ a:active {
 .centering {
   width: 1200px;
   margin: 0 auto;
+
   box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
 }
 
 .visually-hidden {
   position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  height: 1px;
+
   width: 1px;
+  height: 1px;
   margin: -1px;
   padding: 0;
+  overflow: hidden;
+
   border: 0;
+
+  clip: rect(0 0 0 0);
 }
 
 .site-index {
@@ -59,11 +63,12 @@ a:active {
 \*====================================================================================================================*/
 
 .main-menu {
-  font-weight: bold;
   display: flex;
   margin: 0;
   padding: 0;
+
   list-style: none;
+  font-weight: bold;
 }
 
 .main-menu li {
@@ -106,32 +111,30 @@ a:active {
   HERO
 \*====================================================================================================================*/
 
-/*.hero-pictures {*/
+.hero {
+  padding-top: 508px;
 
-.hero-bottom-text {
-  /*height: 509px;*/
-  padding-top: 509px;
-  width: 1200px;
-  background: url("../img/background-text.png") center no-repeat,
-              url("../img/background-mask.png") bottom center no-repeat,
-              url("../img/background.jpg") center -55px no-repeat;
+  background: url("../img/background-text.png") center 77px no-repeat,
+  url("../img/background-mask.png") center 451px no-repeat,
+  url("../img/background.jpg") center -56px no-repeat;
 }
 
 .hero-block-heading {
+  font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  font-weight: bold;
 }
 
 .hero-bottom-text {
-  background-color: #ffffff;
-  /*padding-top: 60px;*/
+  padding-top: 60px;
   padding-bottom: 40px;
+
+  background-color: #ffffff;
 }
 
 .hero-block-heading {
   width: 450px;
-  margin:0 auto;
+  margin: 0 auto;
   margin-bottom: 25px;
 }
 
@@ -145,24 +148,26 @@ a:active {
 }
 
 .main-features-heading {
+  font-weight: bold;
   font-size: 21px;
   line-height: 21px;
-  font-weight: bold;
 }
 
 .feature {
   display: flex;
+
   line-height: 21px;
+
   background-color: #81b3d2;
 }
 
 .content-block {
+  box-sizing: border-box;
   width: 33.3%;
   padding-top: 45px;
+  padding-right: 50px;
   padding-bottom: 30px;
   padding-left: 50px;
-  padding-right: 50px;
-  box-sizing: border-box;
 }
 
 .main-features-heading {
@@ -173,6 +178,7 @@ a:active {
 
 .content-block {
   color: #ffffff;
+
   background-color: #81b3d2;
 }
 
@@ -181,37 +187,43 @@ a:active {
 \*====================================================================================================================*/
 
 .services-list {
-  line-height: 21px;
   display: flex;
-  background-color: #ffffff;
   margin: 0;
   padding: 0;
+
   list-style: none;
+  line-height: 21px;
+
+  background-color: #ffffff;
 }
 
-.services-list li{
-  background-repeat: no-repeat;
-  background-position: center 60px;
+.services-list li {
   width: 33.3%;
   padding-top: 159px;
-  padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 68px;
+  padding-left: 50px;
+
+  background-repeat: no-repeat;
+  background-position: center 60px;
 }
 
 .services-home {
-  background-image: url("../img/icon-home.svg");
   padding-top: 85px;
+
+  background-image: url("../img/icon-home.svg");
 }
 
 .services-burger {
-  background-image: url("../img/icon-burger.svg");
   padding-top: 80px;
+
+  background-image: url("../img/icon-burger.svg");
 }
 
 .services-present {
-  background-image: url("../img/icon-present.svg");
   padding-top: 80px;
+
+  background-image: url("../img/icon-present.svg");
 }
 
 /*====================================================================================================================*\
@@ -219,20 +231,22 @@ a:active {
 \*====================================================================================================================*/
 
 .advantages-list {
-  line-height: 21px;
   display: flex;
-  background-color: #eeeeee;
   margin: 0;
   padding: 0;
+
   list-style: none;
+  line-height: 21px;
+
+  background-color: #eeeeee;
 }
 
 .advantages-list li {
   width: 33.3%;
   padding-top: 45px;
-  padding-left: 60px;
   padding-right: 60px;
   padding-bottom: 50px;
+  padding-left: 60px;
 }
 
 /*====================================================================================================================*\
@@ -240,19 +254,21 @@ a:active {
 \*====================================================================================================================*/
 
 .hotels-list {
-  padding: 0;
   margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
 .hotels-item {
-  min-height: 110px;
   display: flex;
-  border-top: 1px solid #e5e5e5;
-  padding-left: 6%;
-  padding-right: 6%;
+  min-height: 110px;
   padding-top: 20px;
+  padding-right: 6%;
   padding-bottom: 20px;
+  padding-left: 6%;
+
+  border-top: 1px solid #e5e5e5;
 }
 
 .hotels-item:last-child {
@@ -264,8 +280,9 @@ a:active {
 }
 
 .hotels-info h3 {
-  font-size: 21px;
   margin: 0;
+
+  font-size: 21px;
 }
 
 .hotels-info p {
@@ -273,9 +290,9 @@ a:active {
 }
 
 .hotels-pic {
-  margin-right: 30px;
   display: flex;
   align-items: center;
+  margin-right: 30px;
 }
 
 .hotels-rating {
@@ -291,18 +308,21 @@ a:active {
 }
 
 .rating-label {
-  color: #666666;
-  background-color: #f2f2f2;
   padding-top: 1px;
+  padding-right: 15px;
   padding-bottom: 1px;
   padding-left: 15px;
-  padding-right: 15px;
+
+  color: #666666;
+
+  background-color: #f2f2f2;
 }
 
 .hotels-rating-stars {
+  height: 17px;
+
   background-image: url("../img/star.svg");
   background-repeat: space;
-  height: 17px;
 }
 
 .hotels-info {
@@ -330,26 +350,30 @@ a:active {
 .btn {
   font: inherit;
   font-weight: bold;
-  text-transform: uppercase;
+  line-height: 1;
   text-align: center;
   color: #ffffff;
+  text-transform: uppercase;
+
   border: none;
-  line-height: 1;
 }
 
 .btn-big {
-  font-size: 24px;
   padding: 31px 120px;
+
+  font-size: 24px;
 }
 
 .btn-small {
-  font-size: 14px;
   padding: 8px 17px;
+
+  font-size: 14px;
 }
 
 .btn-medium {
-  font-size: 21px;
   padding: 19px 196px;
+
+  font-size: 21px;
 }
 
 .btn-brown {
@@ -366,6 +390,7 @@ a:active {
 
 .btn-brown:active {
   color: rgba(255, 255, 255, 0.3);
+
   background-color: #503e33;
 }
 
@@ -375,6 +400,7 @@ a:active {
 
 .btn-blue:active {
   color: rgba(255, 255, 255, 0.3);
+
   background-color: #5496bd;
 }
 
@@ -383,12 +409,13 @@ a:active {
 \*====================================================================================================================*/
 
 .btn-change-amount {
-  background-color: #f2f2f2;
   font: inherit;
   font-weight: bold;
-  text-transform: uppercase;
-  border: 2px solid #f2f2f2;
   color: #a9a9a9;
+  text-transform: uppercase;
+
+  background-color: #f2f2f2;
+  border: 2px solid #f2f2f2;
 }
 
 .btn-change-amount:hover {
@@ -400,14 +427,16 @@ a:active {
 }
 
 .search-form-head {
-  background-color: #ffffff;
   padding-top: 50px;
+
+  background-color: #ffffff;
 }
 
 .search-form-head b {
-  font-size: 30px;
   display: inline-block;
   margin-bottom: 15px;
+
+  font-size: 30px;
 }
 
 .search-form-head button {
@@ -415,20 +444,22 @@ a:active {
 }
 
 .search-form {
-  background-color: #ffffff;
+  box-sizing: border-box;
   width: 575px;
   height: 400px;
-  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
   margin: 0 auto;
   padding: 50px;
-  box-sizing: border-box;
+
+  background-color: #ffffff;
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
 }
 
 .search-form-container input[type="text"] {
-  background-color: #f2f2f2;
   font: inherit;
   font-weight: bold;
   text-transform: uppercase;
+
+  background-color: #f2f2f2;
   border: 2px solid #f2f2f2;
   outline: none;
 }
@@ -444,8 +475,9 @@ a:active {
 }
 
 .btn-calendar {
-  border: none;
   background: none;
+  border: none;
+
   fill: #a9a9a9;
 }
 
@@ -458,8 +490,8 @@ a:active {
 }
 
 .search-form-container {
-  color: #000000;
   font-weight: bold;
+  color: #000000;
 }
 
 /*====================================================================================================================*\
@@ -467,9 +499,11 @@ a:active {
 \*====================================================================================================================*/
 
 .sorting-form-wrapper {
-  min-height: 217px;
   width: 1200px;
+  min-height: 217px;
+
   color: #ffffff;
+
   background-image: url("../img/background-blur.jpg");
   background-repeat: no-repeat;
 }
@@ -479,25 +513,27 @@ a:active {
 }
 
 .sorting-form-wrapper legend {
-  font-size: 16px;
   font-weight: bold;
+  font-size: 16px;
 }
 
 .sorting-form-wrapper input[type="text"] {
-  color: inherit;
+  padding: 4px 8px;
+
   font: inherit;
   font-weight: normal;
-  border: 2px solid #ffffff;
+  color: inherit;
+
   background-color: transparent;
-  padding: 4px 8px;
+  border: 2px solid #ffffff;
 }
 
 .sorting-form {
   display: flex;
-  padding-left: 6%;
-  padding-right: 6%;
   padding-top: 25px;
+  padding-right: 6%;
   padding-bottom: 40px;
+  padding-left: 6%;
 }
 
 .sorting-form fieldset {
@@ -512,30 +548,33 @@ a:active {
 
 .sorting-container {
   display: flex;
-  height: 90px;
   justify-content: space-between;
-  padding-left: 6%;
-  padding-right: 6%;
   align-items: center;
+  height: 90px;
+  padding-right: 6%;
+  padding-left: 6%;
 }
 
 .sorting-container .count {
   margin-right: 47px;
+
+  font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  font-weight: bold;
 }
 
 .sorting-container .sorting {
-  font-size: 12px;
   margin-right: 40px;
+
+  font-size: 12px;
 }
 
 .btn-sorting-type button {
-  font: inherit;
-  line-height: 18px;
   margin-right: 30px;
   padding: 0;
+
+  font: inherit;
+  line-height: 18px;
 }
 
 .btn-sorting-priority {
@@ -543,27 +582,31 @@ a:active {
 }
 
 .btn-show {
-  font: inherit;
-  color: inherit;
-  font-size: 14px;
-  text-transform: uppercase;
-  background: transparent;
   padding: 5px 35px;
+
+  font: inherit;
+  font-size: 14px;
+  color: inherit;
+  text-transform: uppercase;
+
+  background: transparent;
   border: 2px solid #ffffff;
 }
 
 .btn-show:hover {
   color: #000000;
+
   background-color: #ffffff;
 }
 
 .btn-sorting-type button {
+  font-size: 12px;
   color: rgba(0, 0, 0, 0.3);
   text-transform: uppercase;
-  font-size: 12px;
+
+  background-color: transparent;
   border: none;
   border-bottom: 2px dotted #81b3d2;
-  background-color: transparent;
 }
 
 .btn-sorting-type button:hover {
@@ -572,6 +615,7 @@ a:active {
 
 .btn-sorting-type button:active {
   color: #000000;
+
   border: none;
 }
 
@@ -582,13 +626,15 @@ a:active {
 .btn-sorting-priority .active:hover,
 .btn-sorting-priority .active:active {
   color: #81b3d2;
+
   border: none;
 }
 
 .btn-sorting-priority button {
   color: #cacaca;
-  border: none;
+
   background-color: transparent;
+  border: none;
 }
 
 .btn-sorting-priority button:hover {
@@ -604,27 +650,29 @@ a:active {
 \*====================================================================================================================*/
 
 .main-footer {
-  height: 120px;
-  background-color: rgba(255, 255, 255, 0.9);
   display: flex;
+  height: 120px;
+
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .footer-hashtag {
-  font-size: 21px;
   font-weight: bold;
+  font-size: 21px;
 }
 
 .footer-hashtag-wrapper,
 .social-footer,
 .htmlacademy-logo-wrapper {
-  width: 33.3%;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 33.3%;
 }
 
 .social-footer {
   padding: 0;
+
   list-style: none;
 }
 
@@ -639,8 +687,9 @@ a:active {
 }
 
 .social-footer a {
-  fill: #ffffff;
   background-color: #81b3d2;
+
+  fill: #ffffff;
 }
 
 .social-footer a:hover {
@@ -649,6 +698,7 @@ a:active {
 
 .social-footer a:active {
   background-color: #5496bd;
+
   fill: #88b6d1;
 }
 
@@ -657,13 +707,14 @@ a:active {
 }
 
 .htmlacademy-logo span {
-  vertical-align: middle;
   padding-right: 5px;
+
+  vertical-align: middle;
 }
 
 .htmlacademy-logo,
 .htmlacademy-logo:hover span,
-.htmlacademy-logo:active span{
+.htmlacademy-logo:active span {
   color: #000000;
 }
 
