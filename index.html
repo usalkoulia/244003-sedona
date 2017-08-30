@@ -10,7 +10,7 @@
   <body>
     <div class="centering">
       <header class="main-header">
-        <!-- <img src="img/logo.png" alt="Логотип Седоны" width="138" height="70"> -->
+        <img src="img/logo.png" alt="Логотип Седоны" width="138" height="70">
         <nav>
           <ul class="main-menu">
             <li>
@@ -43,8 +43,7 @@
           <h2 class="visually-hidden"> Причины, по которым нужно выбрать Седону</h2>
           <div class="feature">
             <div class="content-block">
-              <h3 class="main-features-heading">Настоящий городок</h3>
-              <div class="numbers">— №1 —</div>
+              <h3 class="main-features-heading with-number number-1">Настоящий городок</h3>
               <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <img src="img/feature-1.jpg" alt="Фотография Седоны" class="content-image" width="800" height="256">
@@ -68,26 +67,22 @@
           <div class="feature">
             <img src="img/feature-2.jpg" alt="Фотография моста дьявола в Седоне" class="content-image" width="800" height="256">
             <div class="content-block">
-              <h3 class="main-features-heading">Там есть <br> мост дьявола</h3>
-              <div class="numbers">— №2 —</div>
+              <h3 class="main-features-heading with-number number-2">Там есть <br> мост дьявола</h3>
               <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
           </div>
 
           <ul class="advantages-list">
             <li>
-              <h3 class="main-features-heading">небольшая площадь</h3>
-              <div class="numbers">— №3 —</div>
+              <h3 class="main-features-heading with-number number-3">небольшая площадь</h3>
               <p>Все достопримечательности находятся очень близко</p>
             </li>
             <li>
-              <h3 class="main-features-heading">Красивая дорога</h3>
-              <div class="numbers">— №4 —</div>
+              <h3 class="main-features-heading with-number number-4">Красивая дорога</h3>
               <p>Ехать в Седону из Лас-вегаса совсем не скучно!</p>
             </li>
             <li>
-              <h3 class="main-features-heading">Мало туристов</h3>
-              <div class="numbers">— №5 —</div>
+              <h3 class="main-features-heading with-number number-5">Мало туристов</h3>
               <p>Большинство едет в Гранд-каньон и толпится там</p>
             </li>
           </ul>
@@ -104,33 +99,41 @@
             <form action="#" method="post" class="search-form">
               <div class="form-input">
                 <label for="calendar-in">Дата заезда:</label>
-                <input type="text" name="date-in" value="24 апреля 2016" id="calendar-in">
-                <button type="button" name="calendar" class="btn-calendar">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
-                    <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/>
-                    <path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/>
-                  </svg>
-                </button>
+                <div class="container-date">
+                  <input type="text" name="date-in" value="24 апреля 2016" id="calendar-in">
+                  <button type="button" name="calendar" class="btn-calendar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
+                      <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/>
+                      <path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/>
+                    </svg>
+                  </button>
+                </div>
               </div>
               <div class="form-input">
                 <label for="calendar-out">Дата выезда:</label>
-                <input type="text" name="date-out" value="24 апреля 2016" id="calendar-out">
-                <button type="button" name="calendar" class="btn-calendar">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
-                    <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/>
-                    <path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/>
-                  </svg>
-                </button>
+                <div class="container-date">
+                  <input type="text" name="date-out" value="4 июля 2017" id="calendar-out">
+                  <button type="button" name="calendar" class="btn-calendar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
+                      <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/>
+                      <path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/>
+                    </svg>
+                  </button>
+                </div>
               </div>
               <div class="form-input">
                 <label for="adult">Взрослые:</label>
-                <button type="button" name="form-adult-minus" class="btn-change-amount"><span class="visually-hidden">Меньше на одного</span>-</button>
-                <input type="text" name="form-adult" value="2" id="adult">
-                <button type="button" name="form-adult-plus" class="btn-change-amount"><span class="visually-hidden">Больше на одного</span>+</button>
-                <label for="child">Дети:</label>
-                <button type="button" name="form-child-minus" class="btn-change-amount"><span class="visually-hidden">Меньше на одного</span>-</button>
-                <input type="text" name="form-child" value="0" id="child">
-                <button type="button" name="form-child-plus" class="btn-change-amount"><span class="visually-hidden">Больше на одного</span>+</button>
+                <div class="container-number">
+                  <button type="button" name="form-adult-minus" class="btn-change-amount"><span class="visually-hidden">Меньше на одного</span>-</button>
+                  <input type="text" name="form-adult" value="2" id="adult">
+                  <button type="button" name="form-adult-plus" class="btn-change-amount"><span class="visually-hidden">Больше на одного</span>+</button>
+                </div>
+                <label for="child" class="child">Дети:</label>
+                <div class="container-number">
+                  <button type="button" name="form-child-minus" class="btn-change-amount"><span class="visually-hidden">Меньше на одного</span>-</button>
+                  <input type="text" name="form-child" value="0" id="child">
+                  <button type="button" name="form-child-plus" class="btn-change-amount"><span class="visually-hidden">Больше на одного</span>+</button>
+                </div>
               </div>
               <div class="form-button">
                 <button type="submit" class="btn btn-medium btn-blue">Найти</button>

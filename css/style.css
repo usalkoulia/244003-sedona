@@ -36,6 +36,7 @@ a:active {
 .centering {
   width: 1200px;
   margin: 0 auto;
+  position: relative;
 
   box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
 }
@@ -105,6 +106,13 @@ a:active {
 
 .main-header {
   background-color: #ffffff;
+  position: relative;
+}
+
+.main-header img {
+  position: absolute;
+  left: 50%;
+  margin-left: -69px;
 }
 
 /*====================================================================================================================*\
@@ -171,7 +179,7 @@ a:active {
 }
 
 .main-features-heading {
-  width: 160px;
+  width: 155px;
   margin: 0 auto;
   margin-bottom: 25px;
 }
@@ -180,6 +188,41 @@ a:active {
   color: #ffffff;
 
   background-color: #81b3d2;
+}
+
+.with-number {
+  margin-bottom: 67px;
+  position: relative;
+}
+
+.with-number::before {
+  position: absolute;
+  width: 100px;
+  font-size: 14px;
+  font-weight: normal;
+  left: 50%;
+  margin-left: -50px;
+  top: 67px;
+}
+
+.with-number.number-1::before  {
+  content: '— №1 —';
+}
+
+.with-number.number-2::before {
+  content: '— №2 —';
+}
+
+.with-number.number-3::before  {
+  content: '— №3 —';
+}
+
+.with-number.number-4::before  {
+  content: '— №4 —';
+}
+
+.with-number.number-5::before  {
+  content: '— №5 —';
 }
 
 /*====================================================================================================================*\
@@ -359,9 +402,9 @@ a:active {
 }
 
 .btn-big {
-  padding: 31px 120px;
+  padding: 32px 140px;
 
-  font-size: 24px;
+  font-size: 21px;
 }
 
 .btn-small {
@@ -404,6 +447,10 @@ a:active {
   background-color: #5496bd;
 }
 
+.btn.btn-medium.btn-blue {
+  margin-top: 26px;
+}
+
 /*====================================================================================================================*\
   SEARCH
 \*====================================================================================================================*/
@@ -413,6 +460,10 @@ a:active {
   font-weight: bold;
   color: #a9a9a9;
   text-transform: uppercase;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
 
   background-color: #f2f2f2;
   border: 2px solid #f2f2f2;
@@ -445,19 +496,28 @@ a:active {
 
 .search-form {
   box-sizing: border-box;
-  width: 575px;
-  height: 400px;
+  width: 570px;
+  height: 396px;
   margin: 0 auto;
-  padding: 50px;
+  padding: 57px;
+  padding-top: 56px;
 
   background-color: #ffffff;
   box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: -285px;
 }
 
 .search-form-container input[type="text"] {
   font: inherit;
   font-weight: bold;
   text-transform: uppercase;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 15px;
+  box-sizing: border-box;
 
   background-color: #f2f2f2;
   border: 2px solid #f2f2f2;
@@ -492,6 +552,58 @@ a:active {
 .search-form-container {
   font-weight: bold;
   color: #000000;
+  position: relative;
+}
+
+.container-number {
+  font-size: 0;
+  display: inline-block;
+}
+
+.container-number button,
+.container-number input[type="text"] {
+  font-size: 14px;
+}
+
+.container-number input[type="text"] {
+  width: 56px;
+  text-align: center;
+  padding-left: 0;
+}
+
+.search-form-container img {
+  display: block;
+}
+
+.container-date {
+  position: relative;
+  width: 346px;
+  display: inline-block;
+}
+
+.container-date button {
+  position: absolute;
+  right: 0;
+  top: 7px;
+}
+
+.container-date input {
+  width: 100%;
+}
+
+.form-input {
+  text-align: left;
+  margin-bottom: 29px;
+}
+
+.form-input label {
+  display: inline-block;
+  width: 106px;
+}
+
+.form-input .child {
+  margin-left: 50px;
+  width: 56px;
 }
 
 /*====================================================================================================================*\
@@ -652,6 +764,10 @@ a:active {
 .main-footer {
   display: flex;
   height: 120px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
 
   background-color: rgba(255, 255, 255, 0.9);
 }
@@ -679,7 +795,7 @@ a:active {
 .social-footer a {
   display: flex;
   width: 46px;
-  height: 46px;
+  height: 47px;
 }
 
 .social-footer li {
