@@ -9,7 +9,7 @@ body {
   font-weight: normal;
   font-size: 14px;
   line-height: 26px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: #000000;
   text-transform: uppercase;
 
@@ -34,11 +34,28 @@ a:active {
 }
 
 .centering {
-  width: 1200px;
-  margin: 0 auto;
   position: relative;
 
+  width: 1200px;
+  margin: 0 auto;
+
   box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.catalog-page {
+  background-color: #f2f2f2;
+}
+
+.catalog-page main {
+  background-color: #fefefe;
+}
+
+.catalog-page .main-footer {
+  position: relative;
 }
 
 .visually-hidden {
@@ -105,13 +122,15 @@ a:active {
 }
 
 .main-header {
-  background-color: #ffffff;
   position: relative;
+
+  background-color: #ffffff;
 }
 
 .main-header img {
   position: absolute;
   left: 50%;
+
   margin-left: -69px;
 }
 
@@ -191,38 +210,41 @@ a:active {
 }
 
 .with-number {
-  margin-bottom: 67px;
   position: relative;
+
+  margin-bottom: 67px;
 }
 
 .with-number::before {
   position: absolute;
-  width: 100px;
-  font-size: 14px;
-  font-weight: normal;
-  left: 50%;
-  margin-left: -50px;
   top: 67px;
+  left: 50%;
+
+  width: 100px;
+  margin-left: -50px;
+
+  font-weight: normal;
+  font-size: 14px;
 }
 
-.with-number.number-1::before  {
-  content: '— №1 —';
+.with-number.number-1::before {
+  content: "— №1 —";
 }
 
 .with-number.number-2::before {
-  content: '— №2 —';
+  content: "— №2 —";
 }
 
-.with-number.number-3::before  {
-  content: '— №3 —';
+.with-number.number-3::before {
+  content: "— №3 —";
 }
 
-.with-number.number-4::before  {
-  content: '— №4 —';
+.with-number.number-4::before {
+  content: "— №4 —";
 }
 
-.with-number.number-5::before  {
-  content: '— №5 —';
+.with-number.number-5::before {
+  content: "— №5 —";
 }
 
 /*====================================================================================================================*\
@@ -414,7 +436,7 @@ a:active {
 }
 
 .btn-medium {
-  padding: 19px 196px;
+  padding: 19px 195px;
 
   font-size: 21px;
 }
@@ -456,25 +478,38 @@ a:active {
 \*====================================================================================================================*/
 
 .btn-change-amount {
-  font: inherit;
-  font-weight: bold;
-  color: #a9a9a9;
-  text-transform: uppercase;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-top: 22px;
+  padding-right: 17px;
+  padding-bottom: 12px;
+  padding-left: 17px;
 
+  background: url("../img/sprite-change-amount.png") no-repeat;
   background-color: #f2f2f2;
   border: 2px solid #f2f2f2;
 }
 
-.btn-change-amount:hover {
-  color: #000000;
+.btn-change-amount.btn-minus {
+  background-position: 4px 7px;
 }
 
-.btn-change-amount:active {
-  color: #81b3d2;
+.btn-change-amount.btn-plus {
+  background-position: 1px -66px;
+}
+
+.btn-change-amount.btn-minus:hover {
+  background-position: 4px -16px;
+}
+
+.btn-change-amount.btn-plus:hover {
+  background-position: 1px -97px;
+}
+
+.btn-change-amount.btn-minus:active {
+  background-position: 4px -39px;
+}
+
+.btn-change-amount.btn-plus:active {
+  background-position: 1px -128px;
 }
 
 .search-form-head {
@@ -495,29 +530,31 @@ a:active {
 }
 
 .search-form {
+  position: absolute;
+  top: 0;
+  left: 50%;
+
   box-sizing: border-box;
   width: 570px;
   height: 396px;
   margin: 0 auto;
+  margin-left: -285px;
   padding: 57px;
   padding-top: 56px;
 
   background-color: #ffffff;
   box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
-  position: absolute;
-  left: 50%;
-  top: 0;
-  margin-left: -285px;
 }
 
 .search-form-container input[type="text"] {
+  box-sizing: border-box;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 13px;
+
   font: inherit;
   font-weight: bold;
   text-transform: uppercase;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 15px;
-  box-sizing: border-box;
 
   background-color: #f2f2f2;
   border: 2px solid #f2f2f2;
@@ -550,14 +587,16 @@ a:active {
 }
 
 .search-form-container {
+  position: relative;
+
   font-weight: bold;
   color: #000000;
-  position: relative;
 }
 
 .container-number {
-  font-size: 0;
   display: inline-block;
+
+  font-size: 0;
 }
 
 .container-number button,
@@ -566,9 +605,10 @@ a:active {
 }
 
 .container-number input[type="text"] {
-  width: 56px;
-  text-align: center;
+  width: 40px;
   padding-left: 0;
+
+  text-align: center;
 }
 
 .search-form-container img {
@@ -577,14 +617,15 @@ a:active {
 
 .container-date {
   position: relative;
-  width: 346px;
+
   display: inline-block;
+  width: 346px;
 }
 
 .container-date button {
   position: absolute;
-  right: 0;
   top: 7px;
+  right: 0;
 }
 
 .container-date input {
@@ -592,8 +633,9 @@ a:active {
 }
 
 .form-input {
-  text-align: left;
   margin-bottom: 29px;
+
+  text-align: left;
 }
 
 .form-input label {
@@ -602,8 +644,8 @@ a:active {
 }
 
 .form-input .child {
-  margin-left: 50px;
   width: 56px;
+  margin-left: 50px;
 }
 
 /*====================================================================================================================*\
@@ -625,12 +667,17 @@ a:active {
 }
 
 .sorting-form-wrapper legend {
+  margin-bottom: 8px;
+
   font-weight: bold;
   font-size: 16px;
 }
 
-.sorting-form-wrapper input[type="text"] {
-  padding: 4px 8px;
+.price-wrapper {
+  position: relative;
+
+  height: 32px;
+  margin-bottom: 20px;
 
   font: inherit;
   font-weight: normal;
@@ -638,13 +685,88 @@ a:active {
 
   background-color: transparent;
   border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+  margin-top: -11px;
+  margin-left: -1px;
+
+  background-color: #ffffff;
+}
+
+.price-wrapper input[type="text"] {
+  width: 72px;
+
+  font-size: 14px;
+  line-height: 30px;
+  color: inherit;
+  text-transform: uppercase;
+
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.price-label {
+  display: inline-block;
+  width: 95px;
+  padding-left: 59px;
+}
+
+.form-range {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.form-range .range-scale {
+  height: 2px;
+
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.form-range .range-bar {
+  width: 80%;
+  height: 2px;
+
+  background-color: #ffffff;
+}
+
+.form-range .range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background-color: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 2px 0 #ababab;
+  cursor: pointer;
+}
+
+.range-toggle.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle.range-toggle-max {
+  left: 80%;
 }
 
 .sorting-form {
   display: flex;
   padding-top: 25px;
   padding-right: 6%;
-  padding-bottom: 40px;
+  padding-bottom: 29px;
   padding-left: 6%;
 }
 
@@ -694,7 +816,7 @@ a:active {
 }
 
 .btn-show {
-  padding: 5px 35px;
+  padding: 3px 34px;
 
   font: inherit;
   font-size: 14px;
@@ -762,12 +884,13 @@ a:active {
 \*====================================================================================================================*/
 
 .main-footer {
-  display: flex;
-  height: 120px;
   position: absolute;
-  left: 0;
   right: 0;
   bottom: 0;
+  left: 0;
+
+  display: flex;
+  height: 120px;
 
   background-color: rgba(255, 255, 255, 0.9);
 }
