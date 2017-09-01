@@ -39,7 +39,9 @@ a:active {
   width: 1200px;
   margin: 0 auto;
 
-  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
+
+          box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
 }
 
 .text-center {
@@ -81,6 +83,8 @@ a:active {
 \*====================================================================================================================*/
 
 .main-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0;
   padding: 0;
@@ -144,6 +148,7 @@ a:active {
   background: url("../img/background-text.png") center 77px no-repeat,
   url("../img/background-mask.png") center 451px no-repeat,
   url("../img/background.jpg") center -56px no-repeat;
+  background-color: #647888;
 }
 
 .hero-block-heading {
@@ -181,6 +186,8 @@ a:active {
 }
 
 .feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 
   line-height: 21px;
@@ -189,7 +196,8 @@ a:active {
 }
 
 .content-block {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 33.3%;
   padding-top: 45px;
   padding-right: 50px;
@@ -252,6 +260,8 @@ a:active {
 \*====================================================================================================================*/
 
 .services-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0;
   padding: 0;
@@ -296,6 +306,8 @@ a:active {
 \*====================================================================================================================*/
 
 .advantages-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0;
   padding: 0;
@@ -326,11 +338,15 @@ a:active {
 }
 
 .hotels-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  min-height: 110px;
-  padding-top: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-height: 151px;
+  padding-top: 25px;
   padding-right: 6%;
-  padding-bottom: 20px;
+  padding-bottom: 28px;
   padding-left: 6%;
 
   border-top: 1px solid #e5e5e5;
@@ -354,17 +370,34 @@ a:active {
   margin: 0;
 }
 
+.hotels-info-buttons {
+  margin-top: 5px;
+}
+
 .hotels-pic {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-right: 30px;
 }
 
 .hotels-rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .hotels-type {
@@ -385,15 +418,23 @@ a:active {
 
 .hotels-rating-stars {
   height: 17px;
+  margin-top: 4px;
 
   background-image: url("../img/star.svg");
   background-repeat: space;
 }
 
 .hotels-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .four-stars {
@@ -534,7 +575,9 @@ a:active {
   top: 0;
   left: 50%;
 
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+
+          box-sizing: border-box;
   width: 570px;
   height: 396px;
   margin: 0 auto;
@@ -543,11 +586,13 @@ a:active {
   padding-top: 56px;
 
   background-color: #ffffff;
-  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
 }
 
 .search-form-container input[type="text"] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 13px;
@@ -658,6 +703,7 @@ a:active {
 
   color: #ffffff;
 
+  background-color: #425464;
   background-image: url("../img/background-blur.jpg");
   background-repeat: no-repeat;
 }
@@ -717,8 +763,8 @@ a:active {
 
 .price-label {
   display: inline-block;
-  width: 95px;
-  padding-left: 59px;
+  width: 97px;
+  padding-left: 57px;
 }
 
 .form-range {
@@ -750,7 +796,8 @@ a:active {
   background-color: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
-  box-shadow: 0 2px 2px 0 #ababab;
+  -webkit-box-shadow: 0 2px 2px 0 #ababab;
+          box-shadow: 0 2px 2px 0 #ababab;
   cursor: pointer;
 }
 
@@ -763,6 +810,8 @@ a:active {
 }
 
 .sorting-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-top: 25px;
   padding-right: 6%;
@@ -771,9 +820,12 @@ a:active {
 }
 
 .sorting-form fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   min-width: 235px;
   padding: 0;
+  flex-direction: column;
 }
 
 .sorting-form fieldset:last-child {
@@ -781,10 +833,16 @@ a:active {
 }
 
 .sorting-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 90px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 87px;
   padding-right: 6%;
   padding-left: 6%;
 }
@@ -865,6 +923,8 @@ a:active {
 }
 
 .btn-sorting-priority button {
+  padding: 0;
+
   color: #cacaca;
 
   background-color: transparent;
@@ -879,6 +939,10 @@ a:active {
   color: #81b3d2;
 }
 
+.btn-sorting-priority button:first-child {
+  margin-right: 5px;
+}
+
 /*====================================================================================================================*\
   FOOTER
 \*====================================================================================================================*/
@@ -888,6 +952,10 @@ a:active {
   right: 0;
   bottom: 0;
   left: 0;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
 
   display: flex;
   height: 120px;
@@ -903,9 +971,15 @@ a:active {
 .footer-hashtag-wrapper,
 .social-footer,
 .htmlacademy-logo-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 33.3%;
 }
 
@@ -916,6 +990,8 @@ a:active {
 }
 
 .social-footer a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 46px;
   height: 47px;
