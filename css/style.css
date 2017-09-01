@@ -36,7 +36,8 @@ a:active {
 .centering {
   position: relative;
 
-  width: 1200px;
+  max-width: 1200px;
+  min-width: 768px;
   margin: 0 auto;
 
   -webkit-box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
@@ -189,6 +190,7 @@ a:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-content: space-between;
 
   line-height: 21px;
 
@@ -597,7 +599,6 @@ a:active {
   padding-bottom: 4px;
   padding-left: 13px;
 
-  font: inherit;
   font-weight: bold;
   text-transform: uppercase;
 
@@ -647,6 +648,17 @@ a:active {
 .container-number button,
 .container-number input[type="text"] {
   font-size: 14px;
+  vertical-align: middle;
+}
+
+.image-wrapper {
+  height: 253px;
+  width: 66%;
+}
+
+.image-wrapper img {
+  max-width: 100%;
+  height: auto;
 }
 
 .container-number input[type="text"] {
@@ -691,6 +703,11 @@ a:active {
 .form-input .child {
   width: 56px;
   margin-left: 50px;
+}
+
+.form-input-numbers label,
+.form-input-numbers .container-number {
+  vertical-align: middle;
 }
 
 /*====================================================================================================================*\
