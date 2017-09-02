@@ -37,15 +37,33 @@
           <form class="sorting-form" action="#" method="get">
             <fieldset>
               <legend>Инфраструктура:</legend>
-              <label for="pool"><input type="checkbox" name="pool" value="pool" id="pool" checked>Бассейн</label>
-              <label for="parking"><input type="checkbox" name="parking" value="parking" id="parking">Парковка</label>
-              <label for="wi-fi"><input type="checkbox" name="wi-fi" value="wi-fi" id="wi-fi">wi-fi</label>
+              <label for="pool">
+                <input type="checkbox" name="pool" value="pool" id="pool" class="visually-hidden" checked>
+                <div class="svg-checkbox"></div>Бассейн
+              </label>
+              <label for="parking">
+                <input type="checkbox" name="parking" value="parking" id="parking" class="visually-hidden">
+                <div class="svg-checkbox"></div>Парковка
+              </label>
+              <label for="wi-fi">
+                <input type="checkbox" name="wi-fi" value="wi-fi" id="wi-fi" class="visually-hidden">
+                <div class="svg-checkbox"></div>wi-fi
+              </label>
             </fieldset>
             <fieldset>
               <legend>Тип жилья:</legend>
-              <label for="hotel"><input type="checkbox" name="hotel" value="hotel" id="hotel" checked>Гостинница</label>
-              <label for="motel"><input type="checkbox" name="motel" value="motel" id="motel" checked>Мотель</label>
-              <label for="apartments"><input type="checkbox" name="apartments" value="apartments" id="apartments" checked>Апартаменты</label>
+              <label for="hotel">
+                <input type="checkbox" name="hotel" value="hotel" id="hotel" class="visually-hidden" checked>
+                <div class="svg-checkbox"></div>Гостинница
+              </label>
+              <label for="motel">
+                <input type="checkbox" name="motel" value="motel" id="motel" class="visually-hidden" checked>
+                <div class="svg-checkbox"></div>Мотель
+              </label>
+              <label for="apartments">
+                <input type="checkbox" name="apartments" value="apartments" id="apartments" class="visually-hidden" checked>
+                <div class="svg-checkbox"></div>Апартаменты
+              </label>
             </fieldset>
             <fieldset>
               <legend>Стоимость в сутки (Р):</legend>
