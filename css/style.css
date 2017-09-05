@@ -95,8 +95,8 @@ a:active {
 
 .main-menu li {
   width: 20%;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 14px;
+  padding-bottom: 16px;
 }
 
 .main-menu li:nth-child(1) {
@@ -145,7 +145,7 @@ a:active {
 .hero {
   padding-top: 508px;
 
-  background: url("../img/background-text.png") center 77px no-repeat,
+  background: url("../img/background-text.png") center 76px no-repeat,
   url("../img/background-mask.png") center 451px no-repeat,
   url("../img/background.jpg") center -56px no-repeat;
   background-color: #647888;
@@ -155,19 +155,16 @@ a:active {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
+  width: 450px;
+  margin: 0 auto;
+  margin-bottom: 27px;
 }
 
 .hero-bottom-text {
   padding-top: 60px;
-  padding-bottom: 40px;
+  padding-bottom: 37px;
 
   background-color: #ffffff;
-}
-
-.hero-block-heading {
-  width: 450px;
-  margin: 0 auto;
-  margin-bottom: 25px;
 }
 
 /*====================================================================================================================*\
@@ -203,10 +200,13 @@ a:active {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 33.3%;
-  padding-top: 45px;
-  padding-right: 50px;
+  padding-top: 46px;
+  padding-right: 47px;
   padding-bottom: 20px;
-  padding-left: 50px;
+  padding-left: 48px;
+  color: #ffffff;
+
+  background-color: #81b3d2;
 }
 
 .main-features-heading {
@@ -215,16 +215,10 @@ a:active {
   margin-bottom: 25px;
 }
 
-.content-block {
-  color: #ffffff;
-
-  background-color: #81b3d2;
-}
-
 .with-number {
   position: relative;
 
-  margin-bottom: 67px;
+  margin-bottom: 66px;
 }
 
 .with-number::before {
@@ -278,30 +272,26 @@ a:active {
 
 .services-list li {
   width: 33.3%;
-  padding-top: 159px;
+  padding-top: 161px;
   padding-right: 50px;
-  padding-bottom: 68px;
+  padding-bottom: 67px;
   padding-left: 50px;
 
   background-repeat: no-repeat;
   background-position: center 60px;
 }
 
-.services-home {
-  padding-top: 85px;
-
+.services-list .services-home {
   background-image: url("../img/icon-home.svg");
 }
 
-.services-burger {
-  padding-top: 80px;
-
+.services-list .services-burger {
+  background-position: 159px 60px;
   background-image: url("../img/icon-burger.svg");
 }
 
-.services-present {
-  padding-top: 80px;
-
+.services-list .services-present {
+  background-position: 163px 60px;
   background-image: url("../img/icon-present.svg");
 }
 
@@ -318,18 +308,15 @@ a:active {
 
   list-style: none;
   line-height: 21px;
-  /*word-wrap: break-word;*/
-  word-break: break-word;
 
   background-color: #eeeeee;
 }
 
 .advantages-list li {
-  flex-shrink: 1;
   width: 33.3%;
-  padding-top: 45px;
+  padding-top: 47px;
   padding-right: 60px;
-  padding-bottom: 50px;
+  padding-bottom: 47px;
   padding-left: 60px;
 }
 
@@ -353,7 +340,7 @@ a:active {
   min-height: 151px;
   padding-top: 25px;
   padding-right: 6%;
-  padding-bottom: 28px;
+  padding-bottom: 30px;
   padding-left: 6%;
 
   border-top: 1px solid #e5e5e5;
@@ -416,8 +403,8 @@ a:active {
 
 .rating-label {
   padding-top: 1px;
-  padding-right: 15px;
-  padding-bottom: 1px;
+  padding-right: 13px;
+  padding-bottom: 2px;
   padding-left: 15px;
 
   color: #666666;
@@ -475,19 +462,19 @@ a:active {
 }
 
 .btn-big {
-  padding: 32px 140px;
+  padding: 33px 140px;
 
   font-size: 21px;
 }
 
 .btn-small {
-  padding: 8px 17px;
+  padding: 7px 17px;
 
   font-size: 14px;
 }
 
 .btn-medium {
-  padding: 19px 195px;
+  padding: 18px 195px;
 
   font-size: 21px;
 }
@@ -544,7 +531,7 @@ a:active {
 }
 
 .btn-change-amount.btn-plus {
-  background-position: 1px -66px;
+  background-position: 2px -66px;
 }
 
 .btn-change-amount.btn-minus:hover {
@@ -564,14 +551,14 @@ a:active {
 }
 
 .search-form-head {
-  padding-top: 50px;
+  padding-top: 53px;
 
   background-color: #ffffff;
 }
 
 .search-form-head b {
   display: inline-block;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 
   font-size: 30px;
 }
@@ -606,7 +593,7 @@ a:active {
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 13px;
-
+  font-family: inherit;
   font-weight: bold;
   text-transform: uppercase;
 
@@ -673,8 +660,16 @@ a:active {
   top: 50%;
   left: 50%;
 
-  margin-top: -200px;
+  margin-top: -206px;
   margin-left: -400px;
+}
+
+.image-feature-1 img {
+  margin-top: -206px;
+}
+
+.image-feature-2 img {
+  margin-top: -204px;
 }
 
 .container-number input[type="text"] {
@@ -698,7 +693,7 @@ a:active {
 .container-date button {
   position: absolute;
   top: 7px;
-  right: 0;
+  right: 1px;
 }
 
 .container-date input {
@@ -782,10 +777,11 @@ a:active {
 }
 
 .price-wrapper input[type="text"] {
-  width: 72px;
+  width: 50px;
   height: 30px;
 
   font-size: 14px;
+  font-family: "PT Sans", "Arial", sans-serif;
   line-height: 30px;
   color: inherit;
   text-transform: uppercase;
@@ -797,8 +793,16 @@ a:active {
 
 .price-label {
   display: inline-block;
-  width: 97px;
-  padding-left: 57px;
+  box-sizing: border-box;
+  width: 155px;
+}
+
+.label-from {
+  padding-left: 64px;
+}
+
+.label-to {
+  padding-left: 52px;
 }
 
 .form-range {
@@ -906,11 +910,11 @@ a:active {
 }
 
 .btn-sorting-type button {
-  margin-right: 30px;
+  margin-right: 29px;
   padding: 0;
 
   font: inherit;
-  line-height: 18px;
+  line-height: 15px;
 }
 
 .btn-sorting-priority {
@@ -918,8 +922,8 @@ a:active {
 }
 
 .btn-show {
-  padding: 3px 34px;
-
+  padding: 3px 33px;
+  margin-right: 12px;
   font: inherit;
   font-size: 14px;
   color: inherit;
@@ -969,6 +973,7 @@ a:active {
 
 .btn-sorting-priority button {
   padding: 0;
+  line-height: 0.15;
 
   color: #cacaca;
 
@@ -986,13 +991,14 @@ a:active {
 
 .btn-sorting-priority button:first-child {
   margin-right: 5px;
+  margin-top: 10px;
 }
 
 .svg-checkbox {
   display: inline-block;
   width: 27px;
   height: 23px;
-  margin-right: 10px;
+  margin-right: 13px;
 
   vertical-align: middle;
 
