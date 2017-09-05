@@ -959,7 +959,7 @@ a:active {
 
   background-color: transparent;
   border: none;
-  border-bottom: 2px dotted #81b3d2;
+  border-bottom: 1px dotted #81b3d2;
 }
 
 .btn-sorting-type button:hover {
@@ -1008,7 +1008,7 @@ a:active {
 
 .svg-checkbox {
   display: inline-block;
-  width: 27px;
+  width: 28px;
   height: 23px;
   margin-right: 13px;
 
