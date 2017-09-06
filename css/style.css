@@ -590,6 +590,7 @@ a:active {
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
+  display: none;
 }
 
 .search-form-container input[type="text"] {
@@ -617,6 +618,10 @@ a:active {
 .search-form-container input[type="text"]:focus {
   background-color: #ffffff;
   border-color: #e5e5e5;
+}
+
+.search-form-show {
+  display: block;
 }
 
 .btn-calendar {
@@ -944,6 +949,7 @@ a:active {
   background: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
+  display: inline-block;
 }
 
 .btn-show:hover {
