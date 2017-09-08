@@ -30,7 +30,7 @@ a:hover {
 }
 
 a:active {
-  color: #4c4c4c;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .centering {
@@ -401,6 +401,8 @@ a:active {
 .hotels-type {
   display: inline-block;
   width: 110px;
+
+  vertical-align: top;
 }
 
 .rating-label {
@@ -566,6 +568,7 @@ a:active {
   margin-bottom: 13px;
 
   font-size: 30px;
+  vertical-align: top;
 }
 
 .search-form-head button {
@@ -576,6 +579,7 @@ a:active {
   position: absolute;
   top: 0;
   left: 50%;
+  z-index: 3;
 
   display: none;
   -webkit-box-sizing: border-box;
@@ -721,7 +725,6 @@ a:active {
   display: block;
 
   -webkit-animation: bounce 0.6s;
-
           animation: bounce 0.6s;
 }
 
@@ -754,10 +757,27 @@ a:active {
   color: #000000;
 }
 
+.search-form-container iframe {
+  position: relative;
+  z-index: 2;
+
+  border: none;
+}
+
+.search-form-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  margin: 0;
+}
+
 .container-number {
   display: inline-block;
 
   font-size: 0;
+  vertical-align: top;
 }
 
 .container-number button,
@@ -798,15 +818,13 @@ a:active {
   text-align: center;
 }
 
-.search-form-container img {
-  display: block;
-}
-
 .container-date {
   position: relative;
 
   display: inline-block;
   width: 346px;
+
+  vertical-align: middle;
 }
 
 .container-date button {
@@ -828,6 +846,8 @@ a:active {
 .form-input label {
   display: inline-block;
   width: 106px;
+
+  vertical-align: middle;
 }
 
 .form-input .child {
@@ -916,6 +936,8 @@ a:active {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 155px;
+
+  vertical-align: top;
 }
 
 .label-from {
@@ -958,6 +980,11 @@ a:active {
   -webkit-box-shadow: 0 2px 2px 0 #ababab;
           box-shadow: 0 2px 2px 0 #ababab;
   cursor: pointer;
+}
+
+.form-range .range-toggle:hover {
+  width: 5px;
+  height: 5px;
 }
 
 .range-toggle.range-toggle-min {
@@ -1167,6 +1194,7 @@ a:active {
   right: 0;
   bottom: 0;
   left: 0;
+  z-index: 3;
 
   display: -webkit-box;
   display: -ms-flexbox;

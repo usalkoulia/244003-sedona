@@ -8,8 +8,12 @@ var formChild = searchForm.querySelector("#child");
 var storageAdult = localStorage.getItem("adult");
 var storageChild = localStorage.getItem("child");
 
-if (storageAdult) { formAdult.value = storageAdult; }
-if (storageChild) { formChild.value = storageChild; }
+if (storageAdult) {
+  formAdult.value = storageAdult;
+}
+if (storageChild) {
+   formChild.value = storageChild;
+}
 
 searchButton.addEventListener("click", function(evt) {
   evt.preventDefault();
