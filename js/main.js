@@ -15,6 +15,8 @@ if (storageChild) {
    formChild.value = storageChild;
 }
 
+searchForm.classList.remove("search-form-show");
+
 searchButton.addEventListener("click", function(evt) {
   evt.preventDefault();
   if (searchForm.classList.contains("search-form-show")) {
